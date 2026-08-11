@@ -1,0 +1,13 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "uk.co.racingalpha/signals",
+  "description": "GB & IRE horse racing signals: AI scores, fair prices, draw bias, and a frozen public tips ledger.",
+  "version": "1.0.0",
+  "websiteUrl": "https://racingalpha.co.uk/developers",
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://racingalpha.co.uk/api/mcp"
+    }
+  ]
+}

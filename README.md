@@ -1,5 +1,7 @@
 # Racing Alpha MCP server
 
+[![qtexuk/racing-alpha-mcp MCP server](https://glama.ai/mcp/servers/qtexuk/racing-alpha-mcp/badges/score.svg)](https://glama.ai/mcp/servers/qtexuk/racing-alpha-mcp)
+
 **GB & Irish horse racing signals for AI agents** — the official
 [Model Context Protocol](https://modelcontextprotocol.io) server from
 [Racing Alpha](https://racingalpha.co.uk).
@@ -38,6 +40,20 @@ Works keyless (50 requests/day per IP). A free key raises that to
 1,000/day — get one at
 [racingalpha.co.uk/developers](https://racingalpha.co.uk/developers)
 and pass it as `Authorization: Bearer ra_live_…`.
+
+Stdio-only client? Use the bundled zero-dependency bridge:
+
+```bash
+npx github:qtexuk/racing-alpha-mcp
+# or with a key:
+RACING_ALPHA_API_KEY=ra_live_… npx github:qtexuk/racing-alpha-mcp
+```
+
+Or via Docker:
+
+```bash
+docker build -t racing-alpha-mcp . && docker run -i racing-alpha-mcp
+```
 
 ## Tools
 
